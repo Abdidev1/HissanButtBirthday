@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width",initial-scale=1.0>
+        <title>Happy Birthday Hissan Butt!</title>
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                background: linear-gradient(135deg,#0c0c1d,#2a2a4a);
+                color: #eee;
+                text-align: center;
+                padding: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+            .container{
+                background-color: rgba(255,255,255,0.05);
+                padding: 40px;
+                border-radius: 15px;
+                box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                border: 1px solid rgba(255,255,255,0.18);
+                max-width: 800px;
+                width: 90%;
+            }
+            h1{
+                color: #64b5f6;
+                margin-bottom: 30px;
+                font-size: 2.5em;
+                letter-spacing: 1px;
+            }
+            .message{
+                font-size: 1.3em;
+                line-height: 1.7;
+                margin-bottom: 40px;
+                color: #dcdcdc;
+            }
+            .years{
+                font-weight: bold;
+                color: #a7ffeb;
+            }
+            .image-container{
+                margin-bottom: 40px;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            }
+            .birthday-image{
+                width: 100%;
+                height: auto;
+                display: block;
+                transition: transform 0.3s ease-in-out;
+            }
+            .birthday-image:hover{
+                transform: scale(1.05);
+            }
+            .wish-button{
+                background: linear-gradient(45deg,#4a148c,#880e4f);
+                color: white;
+                padding: 15px;
+                border: none;
+                border-radius: 8px;
+                font-size: 1.1em;
+                cursor: pointer;
+                transition: background 0.3s ease,transform 0.2s ease-in-out;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            }
+            .wish-button:hover{
+                background: linear-gradient(54deg,#6a1b9a,#ad1457);
+                transform: scale(1.03);
+            }
+            #birthdayWish{
+                margin-top: 30px;
+                font-weight: bold;
+                color: #69f0ae;
+                font-size: 1.2em;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out,transform 0.3s ease-in-out;
+                transform: translateY(10px);
+            }
+            #birthdayWish.show{
+                opacity: 1;
+                transform: translateY(0);
+            }
+            @media (max-width:768px){
+                .container{
+                    padding: 30px;
+                    width: 95%;
+                }
+                h1{
+                    font-size: 2em;
+                }
+                .message{
+                    font-size: 1.1em;
+                    margin-bottom: 30px;
+                }
+                .wish-button{
+                    padding: 12px 30px;
+                    font-size: 1em;
+                }
+            }
+            @media (max-width:480px){
+                .container{
+                    padding: 20px;
+                }
+                h1{
+                    font-size: 1.7em;
+                }
+                .message{
+                    font-size: 1em;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Happy Birthday Hissan Butt!</h1>
+            <div class="image-container">
+                <img src="HTML,CSS,JS/Hissan Butt.jpg" alt="Birthday Celebration" class="birthday-image">
+            </div>
+            <p class="message">
+                To My Amazing Friend,Happy Birthday! Celebrating Another Year Of Your Incredible Journey.It Feels Like Just Yesterday We Met Back In 2014! -- That's A Fantastic <span class="years">11 years</span> Of Friendship! Wishing You A Future Filled With Innovation.joy,and all The Best Life Has To Offer.
+            </p>
+            <button class="wish-button" oneclick = "showBirthdayWish()">Activate Birthday Cheer!</button>
+            <div id="birthdayWish">
+                Have A Nice Day! And May Allah Succeed You!
+            </div>
+        </div>
+        <script>
+            function showBirthdayWish(){
+                const wishElement = document.getAnimationsElementbyId("BirthayWish");
+                wishElement.classList.add("show");
+            }
+        </script>
+</body>
+</html>
